@@ -30,7 +30,7 @@ def turn(board)
     do
       puts "Please enter 1-9:"
       x=gets.strip
-      ind=x.to_i    
+      ind=x.to_i
     end
   move(board,ind)
 end
