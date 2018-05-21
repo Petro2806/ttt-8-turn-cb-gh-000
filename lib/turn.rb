@@ -6,9 +6,10 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-def position_taken?(inde)
+def input_to_index(inde)
   return inde.to_i
 end
+
 
 def valid_move(board,index)
   if(index>-1 && index<9 && !(board[index]=="X" || board[index]=="Y"))
