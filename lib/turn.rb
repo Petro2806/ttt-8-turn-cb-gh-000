@@ -7,7 +7,7 @@ def display_board(board)
 end
 
 def input_to_index(inde)
-  return inde.to_i
+  return inde.to_i-1
 end
 
 
@@ -20,7 +20,7 @@ def valid_move(board,index)
 end
 
 def move(board,index,mov="X")
-  board[index-1]=mov
+  board[index]=mov
 end
 
 def turn(board)
