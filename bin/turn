@@ -1,5 +1,5 @@
 #!/usr/bin/env rubydef display_board(board)
-require_relative '../lib/turn'
+require_relative '../lib/turn.rb'
 
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
