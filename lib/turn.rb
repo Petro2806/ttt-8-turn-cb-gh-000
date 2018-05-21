@@ -19,7 +19,7 @@ def valid_move(board,index)
 end
 
 def move(board,index,mov="X")
-  board[index]=mov
+  board[index-1]=mov
 end
 
 def turn(board)
