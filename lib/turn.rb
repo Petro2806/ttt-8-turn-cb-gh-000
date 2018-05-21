@@ -11,7 +11,7 @@ def input_to_index(inde)
 end
 
 
-def valid_move(board,index)
+def valid_move?(board,index)
   if(index>-1 && index<9 && !(board[index]=="X" || board[index]=="Y"))
     return true
   else
@@ -27,7 +27,7 @@ def turn(board)
   puts "Please enter 1-9:\n"
   x=gets.strip
   ind=input_to_index(x)
-  until(valid_move(board,ind))
+  until(valid_move?(board,ind))
       puts "Please enter 1-9:"
       x=gets.strip
       ind=x.to_i
