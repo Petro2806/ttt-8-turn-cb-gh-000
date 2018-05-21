@@ -25,7 +25,7 @@ end
 def turn(board)
   puts "Please enter 1-9:"
   x=gets.strip
-  ind=x.to_i
+  ind=position_taken?(x)
   until(valid_move(board,ind))
       puts "Please enter 1-9:"
       x=gets.strip
